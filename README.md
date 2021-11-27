@@ -25,6 +25,7 @@ Model is trained through this file, and stored in .pth.tar file.
 BASE_DIRECTORY is the path where the data is stored for training
 
 ***Instructions Cont.:***
+
 8) BASE_DIRECTORY is changed to whatever the name of the master directory from above.
 9) Run code
 
