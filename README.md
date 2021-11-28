@@ -1,4 +1,11 @@
 ## FIRE-Machine-Learning
+
+This project was created as part of the First-year Introduction to Research in Engineering (FIRE) program. 
+
+The project aims to create a program/algorithm to help detect high gradient areas in an image. The long-term hope of this is project is to integrate it with the research of Dr. Michael Cullinan and Eva Natinsky, the advisors for this project, and their work on AFM image scans. The gradient detection from this project will help distinguish feature-rich areas from feature-poor areas in these images scans, allowing for a more optimized use of the electron microscope to focus on the feature-rich area. 
+
+This project works by creating an artificial dataset by applying a simple Sobel filter to detect high gradient areas. Afterward, all the images are passed and in a UNet machine learning architecture to create a more generalized model. The end result is available in this repository. 
+
 # 1_fire.py:
 Training and Validation Dataset is created through this python file
 
@@ -29,7 +36,7 @@ BASE_DIRECTORY is the path where the data is stored for training
 8) BASE_DIRECTORY is changed to whatever the name of the master directory from above.
 9) Run code
 
-After each epoch, the validation set will be tested the outputs will be saved into a folder named **saved_images**. It contain a mask with a coresponding prediction mask, noted with a prefix "pred". 
+After each epoch, the validation set will be tested the outputs will be saved into a folder named **saved_images**. It contain a mask with a corresponding prediction mask, noted with a prefix "pred". 
 
 To run the model on custom images without training, simply comment out all the functions within the NUM_EPOCHS for loop except **save_predictions_as_imgs()**
 
